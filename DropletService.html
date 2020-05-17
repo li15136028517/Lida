@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=devic-width,initial-scale=1,user-scalable=no">
+    <!--icon-->
+    <link rel="short icon" type="images/x-icon"  href="Resource/icon.png">
+    <!--外部样式-->
+    <link rel="stylesheet" href="Public.css">
+    <title>李达</title>
+
+    <style>
+        .DS_first_section img{
+            width: 100%;
+            margin-bottom: -5px;
+        }
+        .DS_sencond_section ul{
+            display: table;
+            width: 100%;
+            background: white;
+            height: 100px;
+            margin-bottom: 15px;
+        }
+        .DS_sencond_section ul li{
+            display: table-cell;
+            width: 33.3%;
+            text-align: center;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <!--第一部份-->
+    <span>小滴服务</span>
+</header>
+<section class="DS_first_section">
+    <!--第二部分-->
+    <img id="bannerImg" src="Resource/banner-1.png" alt="">
+</section>
+<section class="DS_sencond_section">
+    <!--第三部分-->
+    <!--ul li 布局-->
+    <ul>
+        <li><img src="Resource/index1.png" alt=""><span>企业项目</span></li>
+        <li><img src="Resource/index2.png" alt=""><span>平台风采</span></li>
+        <li><img src="Resource/index3.png" alt=""><span>报名流程</span></li>
+    </ul>
+    <ul>
+        <li><img src="Resource/index4.png" alt=""><span>客户管理</span></li>
+        <li><img src="Resource/index5.png" alt=""><span>账务管理</span></li>
+        <li><img src="Resource/index6.png" alt=""><span>新闻公告</span></li>
+    </ul>
+    <ul>
+        <li><img src="Resource/index7.png" alt=""><span>工程案例</span></li>
+        <li><img src="Resource/index8.png" alt=""><span>修改密码</span></li>
+        <li><img src="Resource/index9.png" alt=""><span>会员注册</span></li>
+    </ul>
+
+</section>
+<footer>
+    <!--第四部分-->
+    <!--a标签 链接-->
+    <ul>
+        <li><a href="DropletService.html" style="color: red"><img src="Resource/nav11.png" alt=""><span>小滴服务</span></a></li>
+        <li><a href="CompanyItem.html"><img src="Resource/nav20.png" alt=""><span>企业项目</span></a></li>
+        <li><a href="ServiceFlow.html"><img src="Resource/nav30.png" alt=""><span>服务流程</span></a></li>
+        <li><a href="PlatformMien.html"><img src="Resource/nav40.png" alt=""><span>平台风采</span></a></li>
+        <li><a href="MyDroplet.html"><img src="Resource/nav50.png" alt=""><span>我的小滴</span></a></li>
+    </ul>
+</footer>
+</body>
+
+<script>
+    var flag = 1;
+    var bannerImg = document.getElementById("bannerImg");
+
+    setInterval(function () {
+        flag++;
+        if(flag > 3){
+           flag = 1;
+        }
+        bannerImg.src = "Resource/banner-" +flag+ ".png";
+    },3000);
+</script>
+</html>

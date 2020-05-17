@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=devic-width,initial-scale=1,user-scalable=no">
+    <!--icon-->
+    <link rel="short icon" type="images/x-icon"  href="Resource/icon.png">
+    <!--外部样式-->
+    <link rel="stylesheet" href="Public.css">
+    <title>李达</title>
+    <style>
+        .div1{
+            position: relative;
+        }
+        .div1_img{
+            width: 100%;
+        }
+        .div2{
+            left: 50%;
+            top: 50%;
+            width: 66px;
+            height: 120px;
+            margin-left: -33px;
+            margin-top: -60px;
+            position: absolute;
+            text-align: center;
+        }
+        .div2 span{
+                display: block;
+        }
+        .div2 button{
+            width: 66px;
+            background: blue;
+        }
+        .DS_section_first_div{
+            width: 100%;
+        }
+        .DS_section_second_div{
+            width: 90%;
+            height: 50px;
+            margin: 10px auto;
+            border:1px solid #cccccc;
+            border-radius: 10px;
+            line-height: 50px;
+        }
+        .DS_section_second_div_left_img{
+            float: left;
+            margin: 15px 10px 15px 15px;
+        }
+        .DS_section_second_div_right_img{
+            float: right;
+            margin: 15px 15px 15px 10px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <!--第一部分-->
+    <span>我的小滴</span>
+</header>
+<div class="div1">
+    <!--第二部分-->
+    <img class="div1_img" src="Resource/banner5.png" alt="">
+    <div class="div2">
+        <img class="div2_img" src="Resource/head.png" alt="">
+        <!--<span>华杉科技</span>-->
+        <span id="My_user"></span>
+        <button id="btn">退出登录</button>
+    </div>
+</div>
+<section>
+    <!--第三部分-->
+    <div class="DS_section_first_div">
+        <div class="DS_section_second_div">
+            <img class="DS_section_second_div_left_img" src="Resource/gr_1.png" alt="">
+            <span>我的客户</span>
+            <img class="DS_section_second_div_right_img" src="Resource/jt.png" alt=""></div>
+    <div/>
+    <div class="DS_section_first_div">
+        <div class="DS_section_second_div">
+            <img class="DS_section_second_div_left_img" src="Resource/gr_2.png" alt="">
+            <span>我的客户</span>
+            <img class="DS_section_second_div_right_img" src="Resource/jt.png" alt="">
+        </div>
+    <div/>
+    <div class="DS_section_first_div">
+        <div class="DS_section_second_div">
+            <img class="DS_section_second_div_left_img" src="Resource/gr_3.png" alt="">
+            <span>我的客户</span>
+            <img class="DS_section_second_div_right_img" src="Resource/jt.png" alt="">
+        </div>
+    <div/>
+    <div class="DS_section_first_div">
+        <div class="DS_section_second_div">
+                <img class="DS_section_second_div_left_img" src="Resource/gr_4.png" alt="">
+                <span>我的客户</span>
+                <img class="DS_section_second_div_right_img" src="Resource/jt.png" alt="">
+        </div>
+    <div/>
+    <div class="DS_section_first_div">
+        <div class="DS_section_second_div">
+            <img class="DS_section_second_div_left_img" src="Resource/gr_1.png" alt="">
+            <span>我的客户</span>
+            <img class="DS_section_second_div_right_img" src="Resource/jt.png" alt="">
+        </div>
+    <div/>
+    <div class="DS_section_first_div">
+        <div class="DS_section_second_div">
+            <img class="DS_section_second_div_left_img" src="Resource/gr_1.png" alt="">
+            <span>我的客户</span>
+            <img class="DS_section_second_div_right_img" src="Resource/jt.png" alt="">
+        </div>
+    <div/>
+    <div class="DS_section_first_div">
+        <div class="DS_section_second_div">
+            <img class="DS_section_second_div_left_img" src="Resource/gr_1.png" alt="">
+            <span>我的客户</span>
+            <img class="DS_section_second_div_right_img" src="Resource/jt.png" alt="">
+        </div>
+    <div/>
+
+</section>
+<footer>
+    <!--第四部分-->
+    <!--a标签 链接-->
+    <ul>
+        <li><a href="DropletService.html"><img src="Resource/nav10.png" alt=""><span>小滴服务</span></a></li>
+        <li><a href="CompanyItem.html"><img src="Resource/nav20.png" alt=""><span>企业项目</span></a></li>
+        <li><a href="ServiceFlow.html"><img src="Resource/nav30.png" alt=""><span>服务流程</span></a></li>
+        <li><a href="PlatformMien.html"><img src="Resource/nav40.png" alt=""><span>平台风采</span></a></li>
+        <li><a href="MyDroplet.html" style="color: red"><img src="Resource/nav51.png" alt=""><span>我的小滴</span></a></li>
+    </ul>
+</footer>
+</body>
+<script>
+    document.getElementById("My_user").innerHTML = window.localStorage.getItem("user");
+
+    var btn = document.querySelector("#btn");
+
+    btn.onclick = function(){
+        window.localStorage.removeItem("user");
+        location.href = "index.html";
+
+        // window.location.href = "index.html";
+    }
+</script>
+</html>

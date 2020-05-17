@@ -1,0 +1,73 @@
+/*默认样式*/
+
+/*无边框*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    /*a标签默认样式：白色 无下划线*/
+    text-decoration: none;
+    color: white;
+}
+
+/*背景色：*/
+body{
+    background: rgb(244,244,246);
+
+    padding-top: 44px;
+    padding-bottom: 49px;
+}
+
+/*第一部分 样式：*/
+header{
+    background: rgb(40,133,202);
+    color: white;
+    text-align: center;
+    line-height: 44px;
+    font-size: 18px;
+
+    left: 0;
+    top: 0;
+    width: 100%;
+    position: fixed;
+
+    z-index: 999;
+}
+
+/*第二部分 样式：*/
+.DS_first_section img{
+    width: 100%;
+    margin-bottom: -5px;
+}
+
+/*第四部分 样式*/
+footer{
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+}
+/*ul 样式：行 */
+footer ul{
+    display: table;
+    width: 100%;
+    background: black;
+    height: 49px;
+}
+/*li 样式：列 水平垂直居中*/
+footer ul li{
+    display: table-cell;
+    width: 20%;
+    text-align: center;
+    vertical-align: middle;
+}
+/*将span改为行级*/
+footer ul li span{
+    display: block;
+}
+footer ul li a img{
+    width: 20px;
+    height: 20px;
+}

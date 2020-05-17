@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=devic-width,initial-scale=1,user-scalable=no">
+    <!--icon-->
+    <link rel="short icon" type="images/x-icon"  href="Resource/icon.png">
+    <!--外部样式-->
+    <link rel="stylesheet" href="Public.css">
+    <script type="text/javascript" src="Pubilc.js"></script>
+    <title>李达</title>
+
+    <style>
+        article{
+            margin: 20px;
+        }
+        h3{
+            color: red;
+            font-size: 18px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #dddddd;
+        }
+        h4{
+            font-size: 14px;
+        }
+        article p{
+            font-size: 12px;
+            text-indent: 24px;
+            line-height: 24px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <!--第一部分-->
+    <span>平台风采</span>
+</header>
+<section class="DS_first_section">
+    <!--第二部分-->
+    <img src="Resource/banner4.png" alt="">
+</section>
+<section>
+    <!--第三部分-->
+    <article>
+        <!--<h3>公司简介</h3>-->
+        <!--<h4>华杉科技（北京）有限公司</h4>-->
+        <!--<p>-->
+            <!--华杉科技(北京)有限公司一直秉承“在高薪和经验的-->
+            <!--路上，我们只做行业第一”， 致力于为整个互联网科技-->
+            <!--行业输送高级技术人才、做好每一款外包项目。-->
+        <!--</p>-->
+        <!--<p>-->
+            <!--华杉科技(北京)有限公司是家既专注于培养高级IT技术人才，为学员提供定制化I-->
+            <!--T职业规划方案及意见咨询服务，又是国内领先的智能手机软件外包服务商。公司-->
+            <!--原东方爱智技术总监，原58同城技术总监共同创立。-->
+        <!--</p>-->
+        <!--<p>-->
+            <!--华杉科技(北京)有限公司拥有业内知名的教研团队和雄厚的课程研发能力，课程的-->
+            <!--快速迭代时刻紧跟当今较为流行的前沿技术、不同行业的外包项目作-->
+            <!--为支撑，强有力的保证了学员的核心竞争力。强竞争力的一线技术人员和完-->
+            <!--善的外包服务流程充分保证了每一款项目的顺利执行。-->
+        <!--</p>-->
+        <h3 id="PM_h3"></h3>
+        <h4 id="PM_h4"></h4>
+        <p id="PM_p"></p>
+    </article>
+
+</section>
+<footer>
+    <!--第四部分-->
+    <!--a标签 链接-->
+    <ul>
+        <li><a href="DropletService.html"><img src="Resource/nav10.png" alt=""><span>小滴服务</span></a></li>
+        <li><a href="CompanyItem.html"><img src="Resource/nav20.png" alt=""><span>企业项目</span></a></li>
+        <li><a href="ServiceFlow.html"><img src="Resource/nav30.png" alt=""><span>服务流程</span></a></li>
+        <li><a href="PlatformMien.html" style="color: red"><img src="Resource/nav41.png" alt=""><span>平台风采</span></a></li>
+        <li><a href="MyDroplet.html"><img src="Resource/nav50.png" alt=""><span>我的小滴</span></a></li>
+    </ul>
+</footer>
+
+</body>
+
+<script>
+    var s1 = 'get';
+    var s2 = 'aboutus';
+    var s3 = ' ';
+    requestMethod(s1,s2,s3,function (str) {
+        var PMh3 = document.getElementById("PM_h3");
+        var PMh4 = document.getElementById("PM_h4");
+        var PMp = document.getElementById("PM_p");
+
+        PMh3.innerHTML = str.title;
+        PMh4.innerHTML = str.subTitle;
+        PMp.innerHTML = str.info;
+    });
+
+
+    // var xhr = new XMLHttpRequest();
+    //
+    // xhr.open('get','https://mockapi.eolinker.com/2ZhGVxjacb39010e6753bd9c02ee803e6e3bfeab6e8007c/aboutus');
+    // xhr.setRequestHeader("content-type","application/x-www-form-urlencoded");
+    // xhr.send();
+    // xhr.onreadystatechange = function () {
+    //     if(xhr.readyState == 4 && xhr.status == 200){
+    //         var res = JSON.parse(xhr.responseText);
+    //
+    //         var PMh3 = document.getElementById("PM_h3");
+    //         var PMh4 = document.getElementById("PM_h4");
+    //         var PMp = document.getElementById("PM_p");
+    //
+    //         PMh3.innerHTML = res.data.title;
+    //         PMh4.innerHTML = res.data.subTitle;
+    //         PMp.innerHTML = res.data.info;
+    //     }
+    // }
+
+</script>
+</html>
